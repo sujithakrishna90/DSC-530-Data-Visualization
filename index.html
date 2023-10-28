@@ -340,7 +340,7 @@ legend.selectAll("text")
                         // Reset the fill color of all counties
             svg.selectAll(".county")
                 .attr("fill", d => colorInterpolator(linearScale(d.properties.GINI_INDEX)))
-                .style("stroke-width", "0px");;
+                .style("stroke-width", "0px");
 
             // Clear the hovered town
             hoveredCounty = null;
