@@ -308,6 +308,7 @@ legend.selectAll("text")
                 .append("path")
                 .attr("d", d => geoPath_generator(d))
                 .attr("fill", d => colorInterpolator(linearScale(d.properties.GINI_INDEX)))
+                .attr("stroke-width",0)
                 .attr("class","county")
                 .on("mouseenter", (m, d) => {
                 tooltip.transition()
